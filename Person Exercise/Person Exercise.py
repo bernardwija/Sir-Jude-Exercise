@@ -91,11 +91,11 @@ def main():
             print('\nWelcome',teacher.getName())
             inptea = teamenu()
             while 0 < inptea < 3:
-                if inptea == '1':
-                    course = [str(x) for x in input("Input courses: ").split()]
+                if inptea == 1:
+                    course = [str(x) for x in input("Input courses to be added: ").split()]
                     teacher.addCourse(course)
                     inptea = teamenu()
-                if inptea == '2':
+                if inptea == 2:
                     course = [str(x) for x in input("Input courses to be removed: ").split()]
                     teacher.removeCourse(course)
                     inptea = teamenu()
